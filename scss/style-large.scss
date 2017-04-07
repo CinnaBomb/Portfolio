@@ -17,29 +17,18 @@ body{
     color: $color3;
   }
   h1{
-
     font-size: 40px;
     font-weight:bold;
+  }
+  h2{
+    margin: 50px 0 20px 0 ;
   }
   *{
     //border: 1px solid black;
   }
-}
-
-/*background styles*/
-.background{
-  margin:auto;
-  //background-color: $color6;
-  width:90%;
 
 }
-.lights{
-  top: -10px;
-  img{
-    margin-top: -30px;
-    width:100%;
-  }
-}
+
 
 //header
 .header{
@@ -49,6 +38,10 @@ body{
     max-width:200px;
     max-height:200px;
   }
+}
+
+.info{
+  margin: 60px auto 50px auto;
 }
 
 //navbar
@@ -77,10 +70,6 @@ body{
 
 //about
 .about{
-  position:relative;
-  h2{
-    position:relative;
-  }
   p, li{
     color: $color4;
     font-size:1.3em;
@@ -89,33 +78,101 @@ body{
   .bio{
     padding: 20px 20px 0 20px;
     border-radius:25px;
-    margin:20px 20px 0 20px;
     background:$color3;
   }
   img{
-    position:relative;
-    left:0px;
+    //left:0px;
     width:100%;
 
+  }
+  p{
+    text-indent:40px;
+    padding-bottom:20px;
   }
 }
 
 //portfolio
 .portfolio {
-  p{
-    text-align: center;
-    color:$color4;
+  //padding-top:100px;
+  position: relative;
+  text-align: center;
+
+  .portfolio-top{
+    position:relative;
+    img{
+      vertical-align: bottom;
+    }
   }
-  .project{
-    background:$color5;
-    border:8px solid $color5;
-    border-radius:10px;
-    margin:20px 10px 20px 0px;
+  .portfolio-bottom{
+    position:relative;
+    img{
+      vertical-align: top;
+    }
+  }
+
+    img{
+      display:inline-block;
+      width:100px;
+      height:100px;
+      border:5px solid $color3;
+      border-radius:50%;
+      transition: width 1s, height 1s;
+      &:hover{
+        width:200px;
+        height:200px;
+        z-index:1;
+      }
   }
 }
 
-//social
-.social{
+//resume
+.resume{
+  //margin-top:30px;
+  position: relative;
+    padding: 20px 20px 20px 20px;
+    border-radius:25px;
+    background:$color3;
+  [class*="col"]{
+    //border: 1px solid red;
+  }
+  h4{
+    padding-top:20px;
+    border-bottom:1px solid blue;
+    font-size:20px;
+    color:blue;
+  }
+  .place{
+    display: inline-block;
+    font-size:20px;
+    //font-weight: bold;
+  }
+  .date{
+    display: inline-block;
+    float:right;
+  }
+  .title{
+    font-weight:bold;
+    text-decoration: underline;
+    //font-style: italic;
+    font-size: 15px;
+    padding:10px 0;
+
+  }
+  .responsibilities{
+
+  }
+  .divider{
+    margin: 10px auto;
+    width:100%;
+    border-bottom:1px dotted blue;
+  }
+
+}
+
+
+//contact
+.contact{
+  padding:100px 0;
   font-size : 50px;
   text-align:center;
   button{
