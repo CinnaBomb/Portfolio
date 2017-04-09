@@ -14,13 +14,13 @@ body:after {
 }
 @media only screen and (min-width: 320px) {
     body:after {
-        content: "320 to 480px";
+        content: "320 to 594px";
         background-color: hsla(90,60%,40%,0.7);
     }
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 594px) {
     body:after {
-        content: "480 to 768px";
+        content: "594 to 768px";
         background-color: hsla(180,60%,40%,0.7);
     }
 }

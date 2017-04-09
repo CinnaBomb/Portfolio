@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <head>
   <script src="https://use.fontawesome.com/56a74f9c07.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
   <link rel = "stylesheet" href = "css/reset.css"/>
-  <link rel = "stylesheet" href = "css/style-x-small.css"/>
-  <link rel = "stylesheet" href = "css/style-small.css"/>
-  <link rel = "stylesheet" href = "css/style-medium.css" />
-  <link rel = "stylesheet" href = "css/style-large.css" />
+  <link rel = "stylesheet" href = "css/style.css" />
   <link rel = "stylesheet" href = "css/media.css"/>
 
 </head>
@@ -46,8 +45,7 @@
 
        <p>I have a keen interest in back-end development and programming apps. My in-progress education includes studying Ruby on Rails, React, Node, Express, PHP and SQL using various online resources including The Odin Project, Free Code Camp, Lynda.com, and W3Schools. </p>
 
-       <p>I'm a problem solver, and am easily caught up in my work. I enjoy working with others, getting to learn their coding tricks and quirks, and teaching them mine.
-         I like to create clean code that is easy for others to understand and contribute to. As a perfectionist, I often return to my work to clean up and improve on old code as I learn better practices.</p>
+       <p>I'm a problem solver, and am easily caught up in my work. I enjoy working with others, getting to learn their coding tricks and quirks, and teaching them mine. I like to create clean code that is easy for others to understand and contribute to. As a perfectionist, I often return to my work to clean up and improve on old code as I learn better practices.</p>
          <img src = "img/portfolio-deco.png">
        </div>
      </div>
@@ -58,7 +56,7 @@
      <div class = "portfolio" id = "portfolio">
       <h2>Portfolio</h2>
       <div class="row">
-        <div class="col-md-offset-2 col-md-8 col-md-inset-2">
+        <div class="col-md-offset-2 col-md-8 col-md-inset-2 ">
           <div class = "portfolio-top" >
             <a href = "#"><img class = "project1" src = "img/wish.jpg"></a>
             <a href = "#"><img class = "project2" src = "img/wish.jpg"></a>
@@ -85,106 +83,111 @@
    <!--RESUME-->
    <h2>Resume</h2>
    <div class = "row">
-    <div class = "resume col-md-offset-2 col-md-8 col-md-inset-2">
-    <!-- EDUCATION -->
-      <h4>Education</h4>
-      <p class= "place">The Odin Project</p>
-      <p class = "date">10/2016 - current</p>
-      <p class = "title">Full Stack Student</p>
-      <p class = "responsibilities">
-      Learned HTML, CSS/SCSS, Developer Tools, Javascript, and jQuery in depth, completed many multi-faceted projects, programmed with Ruby language in preparation for Ruby on Rails. Upcoming education will include MongoDB, Node, Express, Angular, mySQL, and PHP.
-      </p>
+    <div id = "resume" class = "resume col-md-offset-2 col-md-8 col-md-inset-2">
+      <!-- EDUCATION -->
+      <h4>Education <span class = "fa fa-caret-down"></span></h4>
+      <div class = "education hidden">
+        <p class= "place">The Odin Project</p>
+        <p class = "date">10/2016 - current</p>
+        <p class = "title">Full Stack Student</p>
+        <p class = "responsibilities">
+          Learned HTML, CSS/SCSS, Developer Tools, Javascript, and jQuery in depth, completed many multi-faceted projects, programmed with Ruby language in preparation for Ruby on Rails. Upcoming education will include MongoDB, Node, Express, Angular, mySQL, and PHP.
+        </p>
 
-      <div class = "divider"></div>
+        <div class = "divider"></div>
 
-      <p class= "place">Free Code Camp</p>
-      <p class = "date">10/2016 - current</p>
-      <p class = "title">Front-End Student</p>
-      <p class = "responsibilities">Learned Bootstrap and responsive design, reviewed JSON APIs, brushed up on algorithms, completed multiple projects featured on this website including a Calculator, a Wikipedia Viewer, a Random Quote Generator, and a Local Weather App.</p>
+        <p class= "place">Free Code Camp</p>
+        <p class = "date">10/2016 - current</p>
+        <p class = "title">Front-End Student</p>
+        <p class = "responsibilities">Learned Bootstrap and responsive design, reviewed JSON APIs, brushed up on algorithms, completed multiple projects featured on this website including a Calculator, a Wikipedia Viewer, a Random Quote Generator, and a Local Weather App.</p>
 
-      <div class = "divider"></div>
+        <div class = "divider"></div>
 
-      <p class= "place">Lynda</p>
-      <p class = "date">09/2016 - current</p>
-      <p class = "title">Full Stack Student</p>
-      <p class = "responsibilities"> Learned RSpec testing for back-end development, Git essentials, Gulp.js workflow, SASS syntax, Database fundamentals and Accessibility practices. </p>
+        <p class= "place">Lynda</p>
+        <p class = "date">09/2016 - current</p>
+        <p class = "title">Full Stack Student</p>
+        <p class = "responsibilities"> Learned RSpec testing for back-end development, Git essentials, Gulp.js workflow, SASS syntax, Database fundamentals and Accessibility practices. </p>
 
-      <div class = "divider"></div>
+        <div class = "divider"></div>
 
-      <p class= "place">University of Texas at Austin</p>
-      <p class = "date">08/2010 - 12/2012</p>
-      <p class = "title">Radio/Television/Film Major</p>
-      <p class = "responsibilities"> Graduated in 2.5 years with Honors and a 3.7 GPA, earned a place on the College of Communication Dean's Honor List in 2010, received the President's Achievement Scholarship, began and served as President for the Longhorn Animation Society. </p>
-      <p class = "title">Computer Science Minor</p>
-      <p class = "responsibilities"> Completed the Elements of Computer Program, learned general web design and graphics, programmed simple video games using software.  </p>
+        <p class= "place">University of Texas at Austin</p>
+        <p class = "date">08/2010 - 12/2012</p>
+        <p class = "title">Radio/Television/Film Major</p>
+        <p class = "responsibilities"> Graduated in 2.5 years with Honors and a 3.7 GPA, earned a place on the College of Communication Dean's Honor List in 2010, received the President's Achievement Scholarship, began and served as President for the Longhorn Animation Society. </p>
+        <p class = "title">Computer Science Minor</p>
+        <p class = "responsibilities"> Completed the Elements of Computer Program, learned general web design and graphics, programmed simple video games using software.  </p>
 
-      <div class = "divider"></div>
+        <div class = "divider"></div>
 
-      <p class= "place">Ball High School</p>
-      <p class = "date">08/2006 - 06/2010</p>
-      <p class = "title">Top 50 Scholar</p>
-      <p class = "responsibilities"> Served as National Honor Society Fundraising Chair, Organic Gardening Club President, and the BHS Swim Team Co-Captain</p>
+        <p class= "place">Ball High School</p>
+        <p class = "date">08/2006 - 06/2010</p>
+        <p class = "title">Top 50 Scholar</p>
+        <p class = "responsibilities"> Served as National Honor Society Fundraising Chair, Organic Gardening Club President, and the BHS Swim Team Co-Captain</p>
+      </div>
 
-<!-- WORK EXPERIENCE -->
-      <h4>Work Experience</h4>
+      <!-- WORK EXPERIENCE -->
+      <h4>Work Experience <span class = "fa fa-caret-down"></span></h4>
+      <div class = "work hidden">
 
-      <p class= "place">Real Estate</p>
-      <p class = "date">01/2013 - current</p>
-      <p class = "title">Investor</p>
-      <p class = "responsibilities"> Researched and visited various homes in the Austin area to determine profitability, oversaw inspections before undergoing the home buying process, acquired loans if necessary to complete ventures, found tenants to occupy homes and set up contracts, managed home repairs and ongoing requests for tenants.</p>
+        <p class= "place">Real Estate</p>
+        <p class = "date">01/2013 - current</p>
+        <p class = "title">Investor</p>
+        <p class = "responsibilities"> Researched and visited various homes in the Austin area to determine profitability, oversaw inspections before undergoing the home buying process, acquired loans if necessary to complete ventures, found tenants to occupy homes and set up contracts, managed home repairs and ongoing requests for tenants.</p>
 
-      <div class = "divider"></div>
+        <div class = "divider"></div>
 
-      <p class= "place">Big Top Candy Shop</p>
-      <p class = "date">03/2013 - 09-2016</p>
-      <p class = "title">Assistant Manager</p>
-      <p class = "responsibilities">
-      Managed employees daily, helped customers find products for large events, handled customer complaints, solved problems with payment systems, troubleshot store equipment, entered purchase orders and new products into the RetailEdge system weekly, assisted in placing orders when the inventory manager was out, ran errands for soda bar essentials when general manager was out.
-      </p>
-      <p class = "title">Soda Jerk and Clerk</p>
-      <p class = "responsibilities">
-      Operated register, interacted with customers, served soda bar drinks, restocked inventory, priced merchandise, helped new employees, packed items for special orders, opened and closed the store.
-      </p>
+        <p class= "place">Big Top Candy Shop</p>
+        <p class = "date">03/2013 - 09-2016</p>
+        <p class = "title">Assistant Manager</p>
+        <p class = "responsibilities">
+        Managed employees daily, helped customers find products for large events, handled customer complaints, solved problems with payment systems, troubleshot store equipment, entered purchase orders and new products into the RetailEdge system weekly, assisted in placing orders when the inventory manager was out, ran errands for soda bar essentials when general manager was out.
+        </p>
+        <p class = "title">Soda Jerk and Clerk</p>
+        <p class = "responsibilities">
+        Operated register, interacted with customers, served soda bar drinks, restocked inventory, priced merchandise, helped new employees, packed items for special orders, opened and closed the store.
+        </p>
 
-      <div class = "divider"></div>
+        <div class = "divider"></div>
 
-      <p class= "place">Austin Film Festival</p>
-      <p class = "date">08/2012-12/2012</p>
-      <p class = "title">Film Intern</p>
-      <p class = "responsibilities">Assisted in marketing Austin Film Festival to filmmakers and students, sent emails and packages, researched films and festivals, maintained databases, wrote press releases and made maps with Photoshop.</p>
+        <p class= "place">Austin Film Festival</p>
+        <p class = "date">08/2012-12/2012</p>
+        <p class = "title">Film Intern</p>
+        <p class = "responsibilities">Assisted in marketing Austin Film Festival to filmmakers and students, sent emails and packages, researched films and festivals, maintained databases, wrote press releases and made maps with Photoshop.</p>
 
-      <div class = "divider"></div>
+        <div class = "divider"></div>
 
-      <p class= "place">Omer's Henna</p>
-      <p class = "date">06/2010 - 08-2010</p>
-      <p class = "title">Henna Tattoo Artist</p>
-      <p class = "responsibilities"> Sold and painted henna tattoos, opened and closed station, calculated till, directed guests to sections of Wings beach store and attractions in Galveston, Texas. </p>
+        <p class= "place">Omer's Henna</p>
+        <p class = "date">06/2010 - 08-2010</p>
+        <p class = "title">Henna Tattoo Artist</p>
+        <p class = "responsibilities"> Sold and painted henna tattoos, opened and closed station, calculated till, directed guests to sections of Wings beach store and attractions in Galveston, Texas. </p>
 
-      <div class = "divider"></div>
+        <div class = "divider"></div>
 
-      <p class= "place">Fabulous Glassworks</p>
-      <p class = "date">06/2009 - 08/2009</p>
-      <p class = "title">Painter, Gluer, Packer</p>
-      <p class = "responsibilities"> Painted Glass Jewelry and Magnets, Glued and packed them for shipment. </p>
+        <p class= "place">Fabulous Glassworks</p>
+        <p class = "date">06/2009 - 08/2009</p>
+        <p class = "title">Painter, Gluer, Packer</p>
+        <p class = "responsibilities"> Painted Glass Jewelry and Magnets, Glued and packed them for shipment. </p>
 
-      <div class = "divider"></div>
+        <div class = "divider"></div>
 
-      <p class= "place">Big Time Design Co.</p>
-      <p class = "date">06/2008 - 08/2008</p>
-      <p class = "title">Airbrush Tattoo Artist</p>
-      <p class = "responsibilities"> Sold and airbrushed tattoos, opened and closed tattoo station, operated cash register, calculated till, directed guests to attractions.</p>
+        <p class= "place">Big Time Design Co.</p>
+        <p class = "date">06/2008 - 08/2008</p>
+        <p class = "title">Airbrush Tattoo Artist</p>
+        <p class = "responsibilities"> Sold and airbrushed tattoos, opened and closed tattoo station, operated cash register, calculated till, directed guests to attractions.</p>
+      </div>
 
       <!-- SKILLS -->
-      <h4>Skills</h4>
-      <p class = "title">Programs/Computer Skills:</p>
-      <p class = "responsibilities"> Microsoft Office/Word, PowerPoint, Excel, Fast Typing, Photoshop, Web Design (HTML, CSS, Javascript), Git, Ruby, Photoshop, Final Cut Pro, Adobe Flash, Animation, Game Design.</p>
-      <p class = "title">General Skills: </p>
-      <p class = "responsibilities">
-      Conversational Spanish, Fast learner, Great with people, Efficient worker, Organized, Motivated, Punctual, Visual Aesthetics, Logical skills, Photography, Drawing.</p>
-
+      <h4>Skills <span class = "fa fa-caret-down"></span></h4>
+      <div class = "skills hidden">
+        <p class = "title">Programs/Computer Skills:</p>
+        <p class = "responsibilities"> Microsoft Office/Word, PowerPoint, Excel, Fast Typing, Photoshop, Web Design (HTML, CSS, Javascript), Git, Ruby, Photoshop, Final Cut Pro, Adobe Flash, Animation, Game Design.</p>
+        <p class = "title">General Skills: </p>
+        <p class = "responsibilities">
+          Conversational Spanish, Fast learner, Great with people, Efficient worker, Organized, Motivated, Punctual, Visual Aesthetics, Logical skills, Photography, Drawing.</p>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </div>
 
 <!--END RESUME-->
@@ -192,7 +195,7 @@
 <!--CONTACT ME-->
 <div class="clearfix contact" id = "contact">
  <h2>Contact Me!</h2>
- <h3>Laura.Stephens@utexas.edu</h3>
+ <h3>Laura@cinnabomb.it</h3>
 
  <button type ="button"> <a href="https://www.linkedin.com/in/laura-stephens-9508b636" target="_blank"><i class="fa fa-linkedin"></i></button>
  <button type ="button"><a href="https://www.freecodecamp.com/cinnabomb" target='_blank'><i class="fa fa-free-code-camp"></i></button>
