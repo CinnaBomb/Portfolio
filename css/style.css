@@ -2,46 +2,47 @@
 /* RGB */
 @import url("https://fonts.googleapis.com/css?family=Dosis");
 body {
-  font-size: 1.0rem;
   font-family: "Dosis", sans-serif;
-  padding-top: 50px;
+  padding-top: 3.125rem;
   background-color: #c7d6d5; }
   body h1, body h2, body h3 {
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
     color: #6d7275; }
   body h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold; }
   body h2 {
     color: #c20114;
-    margin: 50px 0 20px 0; }
+    margin: 2.125rem 0 1.25rem 0; }
   body .hidden {
     display: none; }
+  body .container-fluid {
+    max-width: 1024px; }
 
 .header img {
-  margin: 50px auto 30px auto;
-  border: 8px solid #c20114;
-  border-radius: 25px;
-  max-width: 200px;
-  max-height: 200px; }
+  margin: 1.0rem auto 1.875rem auto;
+  border: 0.5rem solid #c20114;
+  border-radius: 1.563rem;
+  max-width: 12.5rem;
+  max-height: 12.5rem; }
 
 .info {
-  margin: 60px auto 50px auto; }
+  margin: 3.75rem auto 1.125rem auto; }
 
 .navbar {
   margin: auto;
   width: 80%;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   border: 0.125rem solid #6d7275;
-  border-radius: 60px;
+  border-radius: 3.75rem;
   background-color: #c7d6d5; }
   .navbar a {
     display: inline-block;
     color: #ecebf3;
-    padding: 14px 14px;
-    font-size: 20px; }
+    padding: 0.875rem 0.875rem;
+    font-size: 1.25rem; }
     .navbar a:link, .navbar a:visited {
       color: #c20114; }
     .navbar a:hover, .navbar a:active {
@@ -50,83 +51,92 @@ body {
 
 .about p, .about li {
   color: #c7d6d5;
-  font-size: 1.3em;
-  font-weight: bold; }
+  font-size: 1.25em; }
 
 .about .bio {
-  padding: 20px 20px 0 20px;
-  border-radius: 25px;
+  padding: 1.25rem 1.25rem 0 1.25rem;
+  border-radius: 1.563rem;
   background: #6d7275; }
 
 .about img {
   width: 100%; }
 
 .about p {
-  text-indent: 40px;
-  padding-bottom: 20px; }
+  text-indent: 2.5rem;
+  padding-bottom: 1.25rem; }
 
 .portfolio {
   position: relative;
   text-align: center; }
+  .portfolio .in-progress {
+    border: 0.3125rem solid #c20114; }
+  .portfolio p {
+    color: #c20114;
+    padding-bottom: 10px; }
   .portfolio .portfolio-top {
+    display: inline-block;
     position: relative; }
     .portfolio .portfolio-top img {
       vertical-align: bottom; }
   .portfolio .portfolio-bottom {
+    display: inline-block;
     position: relative; }
     .portfolio .portfolio-bottom img {
       vertical-align: top; }
   .portfolio img {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    border: 5px solid #6d7275;
-    border-radius: 50%;
-    transition: width 1s, height 1s; }
+    margin: 0.225rem;
+    width: 6.25rem;
+    height: 6.25rem;
+    border: 0.3125rem solid #6d7275;
+    border-radius: 1.5rem;
+    transition: width .7s, height .7s; }
     .portfolio img:hover {
-      width: 200px;
-      height: 200px;
+      width: 12.5rem;
+      height: 12.5rem;
       z-index: 1; }
 
 .resume {
   color: #c7d6d5;
   position: relative;
-  padding: 20px 20px 40px 20px;
-  border-radius: 25px;
+  padding: 1.25rem 1.25rem 2.5rem 1.25rem;
+  border-radius: 1.563rem;
   background: #6d7275; }
   .resume h4 {
-    padding-top: 20px;
-    border-bottom: 1px solid #c7d6d5;
-    font-size: 20px; }
+    padding-top: 1.25rem;
+    border-bottom: 0.0625rem solid #c7d6d5;
+    font-size: 1.25rem; }
   .resume .place {
     display: inline-block;
-    font-size: 20px; }
+    font-size: 1.25rem; }
   .resume .date {
     display: inline-block;
     float: right; }
   .resume .title {
     font-weight: bold;
     text-decoration: underline;
-    font-size: 15px;
-    padding: 10px 0; }
+    font-size: 0.9375rem;
+    padding: 0.625rem 0; }
   .resume .divider {
-    margin: 10px auto;
+    margin: 0.625rem auto;
     width: 100%;
-    border-bottom: 1px dotted #c7d6d5; }
+    border-bottom: 0.0625rem dotted #c7d6d5; }
 
 .contact {
-  padding: 100px 0;
-  font-size: 50px;
+  font-size: 2.0rem;
   text-align: center; }
-  .contact h3 {
-    margin-bottom: 20px; }
+  .contact a {
+    text-decoration: none; }
+    .contact a h3 {
+      margin-bottom: 1.25rem; }
+      .contact a h3:link, .contact a h3:visited, .contact a h3:hover, .contact a h3:active {
+        color: #c20114; }
   .contact button {
     background: #c7d6d5;
-    border-radius: 60px;
-    border: 2px solid #6d7275; }
+    border-radius: 0.75rem;
+    border: 0.125rem solid #6d7275; }
   .contact i {
     color: #6d7275; }
-    .contact i:hover, .contact i:active {
+    .contact i:link, .contact i:visited, .contact i:hover, .contact i:active {
       text-decoration: none;
       color: #c20114; }
 
@@ -135,7 +145,16 @@ body {
     margin: auto;
     width: 95%; } }
 
-@media only screen and (min-width: 320px) and (max-width: 594px) {
+@media only screen and (max-width: 594px) {
+  .portfolio .portfolio-bottom {
+    position: relative; }
+    .portfolio .portfolio-bottom img {
+      vertical-align: bottom; }
   .portfolio img {
-    width: 200px;
-    height: 200px; } }
+    width: 7.0rem;
+    height: 7.0rem;
+    margin-bottom: 0.3125rem; }
+  .navbar {
+    width: 90%; }
+    .navbar a {
+      padding: 0.875rem 0.675rem; } }

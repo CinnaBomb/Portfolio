@@ -5,18 +5,6 @@
 // $color4: rgba(40, 88, 123, 1);//blue
 // $color5: rgba(176, 196, 177, 1);//mute green
 
-// $color1: #DF928E;//pink
-// $color2: #4DCCBD;//dark mint
-// $color3: #D6FFF6;//mint
-// $color4: #2374AB;//blue
-// $color5: #231651;//purple
-
-// $color1: #6A6262;//dark gray
-// $color2: #FF928B;//pink
-// $color3: #FEC3A6;//peach
-// $color4: #4B3B47;//dark purple
-// $color5: #9C9990;//gray
-
 /* RGB */
 $color1: rgba(12, 18, 12, 1);//black
 $color2: rgba(194, 1, 20, 1);//red
@@ -29,33 +17,30 @@ $color5: rgba(236, 235, 243, 1);//white
 
 //global styles
 body{
-  font-size:1.0rem;
-  //font-family:"Josefin Sans", sans-serif;
   font-family:"Dosis", sans-serif;
-  padding-top:50px;
+  padding-top:3.125rem;
   background-color: $color4;
   h1,h2,h3{
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align:center;
     color: $color3;
   }
   h1{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight:bold;
   }
   h2{
     color: $color2;
-    margin: 50px 0 20px 0 ;
+    margin: 2.125rem 0 1.25rem 0 ;
   }
   *{
-    //border: 1px solid black;
+    //border: 0.0625rem solid black;
   }
   .hidden{
     display:none;
   }
-  .col-md-8{
-    //clear: both;
-    //max-width: 50%;
+  .container-fluid{
+    max-width:1024px;
   }
 
 }
@@ -64,17 +49,16 @@ body{
 //header
 .header{
   img{
-    margin: 50px auto 30px auto;
-    border:8px solid $color2;
-    border-radius: 25px;
-    //border-style: outset;
-    max-width:200px;
-    max-height:200px;
+    margin: 1.0rem auto 1.875rem auto;
+    border:0.5rem solid $color2;
+    border-radius: 1.563rem;
+    max-width:12.5rem;
+    max-height:12.5rem;
   }
 }
 
 .info{
-  margin: 60px auto 50px auto;
+  margin: 3.75rem auto 1.125rem auto;
 }
 
 //navbar
@@ -82,15 +66,15 @@ body{
   margin:auto;
   width:80%;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   border:0.125rem solid $color3;
-  border-radius:60px;
+  border-radius:3.75rem;
   background-color: $color4;
   a{
     display: inline-block;
     color: $color5;
-    padding: 14px 14px;
-    font-size:20px;
+    padding: 0.875rem 0.875rem;
+    font-size:1.25rem;
     &:link, &:visited{
       color:$color2;
     }
@@ -105,101 +89,102 @@ body{
 .about{
   p, li{
     color: $color4;
-    font-size:1.3em;
-    font-weight:bold;
+    font-size:1.25em;
+    //font-weight:bold;
   }
   .bio{
-    padding: 20px 20px 0 20px;
-    border-radius:25px;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+    border-radius:1.563rem;
     background:$color3;
   }
   img{
-    //left:0px;
     width:100%;
 
   }
   p{
-    text-indent:40px;
-    padding-bottom:20px;
+    text-indent:2.5rem;
+    padding-bottom:1.25rem;
   }
 }
 
 //portfolio
 .portfolio {
-  //padding-top:100px;
+  //margin:10px;
   position: relative;
   text-align: center;
+  .in-progress{
+    border: 0.3125rem solid $color2;
+  }
+  p{
+    color:$color2;
+    padding-bottom:10px;
+
+  }
 
   .portfolio-top{
+    display: inline-block;
     position:relative;
     img{
       vertical-align: bottom;
     }
   }
   .portfolio-bottom{
+    display:inline-block;
     position:relative;
     img{
       vertical-align: top;
     }
   }
 
-    img{
-      display:inline-block;
-      width:100px;
-      height:100px;
-      border:5px solid $color3;
-      border-radius:50%;
-      transition: width 1s, height 1s;
-      &:hover{
-        width:200px;
-        height:200px;
-        z-index:1;
-      }
+  img{
+    margin:0.225rem;
+    width:6.25rem;
+    height:6.25rem;
+    border:0.3125rem solid $color3;
+    border-radius:1.5rem;
+    transition: width .7s, height .7s;
+    &:hover{
+      width:12.5rem;
+      height:12.5rem;
+      z-index:1;
+    }
   }
 }
 
 //resume
 .resume{
   color: $color4;
-  //margin-top:30px;
   position: relative;
-    padding: 20px 20px 40px 20px;
-    border-radius:25px;
-    background:$color3;
-  [class*="col"]{
-    //border: 1px solid red;
-  }
+  padding: 1.25rem 1.25rem 2.5rem 1.25rem;
+  border-radius:1.563rem;
+  background:$color3;
   h4{
-    padding-top:20px;
-    border-bottom:1px solid $color4;
-    font-size:20px;
-    //color:$color2;
+    padding-top:1.25rem;
+    border-bottom:0.0625rem solid $color4;
+    font-size:1.25rem;
   }
   .place{
     display: inline-block;
-    font-size:20px;
-    //font-weight: bold;
+    font-size:1.25rem;
   }
   .date{
     display: inline-block;
     float:right;
   }
   .title{
-    //color: $color2;
     font-weight:bold;
     text-decoration: underline;
-    //font-style: italic;
-    font-size: 15px;
-    padding:10px 0;
+    font-size: 0.9375rem;
+    padding:0.625rem 0;
 
   }
   .responsibilities{
 
   }
   .divider{
-    margin: 10px auto;
+    margin: 0.625rem auto;
     width:100%;
-    border-bottom:1px dotted $color4;
+    border-bottom:0.0625rem dotted $color4;
   }
 
 }
@@ -207,23 +192,29 @@ body{
 
 //contact
 .contact{
-  padding:100px 0;
-  font-size : 50px;
+  font-size : 2.0rem;
   text-align:center;
-  h3{
-    margin-bottom:20px;
+  a{
+    text-decoration:none;
+    h3{
+      margin-bottom:1.25rem;
+      &:link, &:visited, &:hover, &:active{
+        color: $color2;
+      }
+    }
   }
+
   button{
     background:$color4;
-    border-radius:60px;
-    border: 2px solid $color3;
+    border-radius: 0.75rem;
+    border: 0.125rem solid $color3;
   }
+
   i{
     color: $color3;
-    &:hover, &:active{
+    &:link, &:visited, &:hover, &:active{
       text-decoration:none;
       color: $color2;
-      //color:pink;
     }
   }
 }
@@ -240,11 +231,24 @@ body{
 }
 
 //small screen
-@media only screen and (min-width: 320px) and (max-width: 594px){
+@media only screen and (max-width: 594px){
   .portfolio{
+    .portfolio-bottom{
+      position:relative;
+      img{
+        vertical-align: bottom;
+      }
+    }
     img{
-      width:200px;
-      height:200px;
+      width:7.0rem;
+      height:7.0rem;
+      margin-bottom:0.3125rem;
+    }
+  }
+  .navbar{
+    width:90%;
+    a{
+      padding: 0.875rem 0.675rem;
     }
   }
 }
